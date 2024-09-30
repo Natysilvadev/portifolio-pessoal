@@ -1,0 +1,53 @@
+.rodape {
+  display: grid;
+  max-width: 1200px;
+  padding: 20px 40px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.rodape p {
+  font-size: 1.3rem;
+}
+
+.lista-contato p {
+  font-size: 1.2rem;
+}
+
+.contato-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.contato-link p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+@media (max-width: 850px) {
+  .rodape {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .rodape {
+    justify-content: center;
+  }
+  .rodape p {
+    font-size: 1.1rem;
+  }
+
+  .contato-link p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}

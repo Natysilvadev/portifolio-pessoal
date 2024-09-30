@@ -1,0 +1,146 @@
+.experiencia {
+  max-width: 1200px;
+  padding: 20px 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 100px;
+}
+
+.experiencia .subtitulo {
+  color: var(--cinza-claro);
+}
+
+.experiencia-texto {
+  font-size: 1.3rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 60ch;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  background: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  position: relative;
+  border: 2px solid #f0f0f0;
+}
+
+.empresa:hover {
+  border: 2px solid var(--cinza-claro);
+}
+
+.empresa::before {
+  display: block;
+  height: 20px;
+  width: 6px;
+  content: "";
+  background: linear-gradient(#b629f8, #800add);
+  position: absolute;
+  left: -2px;
+  top: 25px;
+}
+
+.empresa-ano {
+  color: var(--cinza-medio);
+  position: absolute;
+  left: -100px;
+  top: 25px;
+  width: 80px;
+  text-align: right;
+}
+
+.empresa-titulo {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  font-family: var(--fonte-secundaria);
+  color: var(--preto);
+  font-weight: 700;
+}
+
+.empresa-texto {
+  font-size: 1rem;
+  color: var(--cinza-medio);
+  line-height: 1.4;
+}
+
+.empresa-tecnologia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* align-content: center; */
+  align-content: start;
+}
+
+.empresa-tecnologia li {
+  background: var(--primary-color);
+  border: 4px;
+  padding: 5px 10px;
+}
+
+@media (max-width: 1000px) {
+  .experiencia-texto {
+    font-size: 1.1rem;
+  }
+
+  .experiencia {
+    gap: 50px;
+  }
+
+  .experiencia .subtitulo {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .experiencia .subtitulo {
+    max-width: none;
+    color: var(--preto);
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    /* font-family: var(--fonte-secundaria); */
+  }
+
+  .experiencia-texto {
+    justify-self: center;
+    max-width: none;
+    text-align: center;
+  }
+
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    text-align: left;
+    color: var(--cor-secundaria);
+    /* font-weight: 600; */
+  }
+
+  .empresa-tecnologia {
+    align-content: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+
+  .experiencia .subtitulo {
+    font-size: 2rem;
+  }
+
+  .empresa-titulo-moblie {
+    color: var(--cor-secundaria);
+    font-weight: 100;
+  }
+}

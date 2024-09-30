@@ -1,0 +1,24 @@
+:root {
+  --primary-color: white;
+  --cor-secundaria: #800add;
+  --fonte-secundaria: "Playfair Display", serif;
+  --fonte-principal: "Fira Sans", sans-serif;
+  --cinza-escuroc13: #141414;
+  --cinza-claro: #e0e0e0;
+  --cinza-medio: #525252;
+  --preto: black;
+  --cinza-fonte: #8f8f8f;
+}
+
+body {
+  background: var(--primary-color);
+  font-family: var(--fonte-principal);
+}
+
+.subtitulo {
+  font-size: 7.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
