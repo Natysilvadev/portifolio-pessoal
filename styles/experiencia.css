@@ -62,9 +62,13 @@
   font-weight: 700;
 }
 
+.empresa-titulo-cargo{
+  color: var(--cor-secundaria);
+}
+
 .empresa-texto {
   font-size: 1rem;
-  color: var(--cinza-medio);
+  color: var(--cor-fonte);
   line-height: 1.4;
 }
 
@@ -137,10 +141,5 @@
 
   .experiencia .subtitulo {
     font-size: 2rem;
-  }
-
-  .empresa-titulo-moblie {
-    color: var(--cor-secundaria);
-    font-weight: 100;
   }
 }
